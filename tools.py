@@ -17,10 +17,12 @@ print("I have arrived")
 WebDriverWait(browser, 10).until(alert_is_present())
 print("An alert appeared")
 
+# Alert
 alert = Alert(browser)
 print(alert.text)
 alert.accept()
 
+# Select
 sel = browser.find_element(By.ID, "sel1")
 my_select = Select(sel)
 my_select_options = [elem.text for elem in my_select.options]

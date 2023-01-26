@@ -50,5 +50,6 @@ trng_page.click_button_1()
 trng_page.close_alert()
 text_from_input = trng_page.get_input_text()
 assert text_from_input == test_value, f"Test Failed: Input didn't match expected ({test_value})."
+
 print("Test Passed")
 trng_page.close_browser()

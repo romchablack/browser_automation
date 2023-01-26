@@ -52,3 +52,8 @@ check_answers_button.click()
 final_answer = browser.find_element(By.XPATH, "//div[@id='trialCompleteBanner']/h4")
 assert final_answer.text == "Trial Complete"
 print(final_answer.text)
+
+eleme = browser.find_element(By.)
+
+print("Test Passed")
+browser.quit()

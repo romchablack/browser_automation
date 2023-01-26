@@ -23,4 +23,5 @@ browser.switch_to.default_content()
 # find text on the main page
 page_text = browser.find_element(By.CSS_SELECTOR, "div#block-5d3de848045889000188d389")
 
+print("Test Passed")
 browser.quit()

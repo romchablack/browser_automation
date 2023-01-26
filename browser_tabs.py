@@ -30,4 +30,5 @@ print(browser1.title)
 browser1.switch_to.window(handels[3])
 print(browser1.title)
 
+print("Test Passed")
 browser1.quit()

@@ -13,3 +13,6 @@ input1Element.send_keys('Number 1')
 # XPATH: $x("//input[@id='ipt1']")
 input2Path = "//input[@id='ipt1']"
 input2Element = browser.find_element(By.XPATH, input2Path)
+
+print("Test Passed")
+browser.quit()
