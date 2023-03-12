@@ -7,7 +7,7 @@ from pages.locator import Locator
 class TrainingGroundPage(BasePage):
 
     url = "https://techstepacademy.com/training-ground"
-    
+
     # moved to base_page.py
     # def __init__(self, driver):
     #     self.driver = driver

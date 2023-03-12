@@ -2,6 +2,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class BaseElement(object):
     def __init__(self, driver, locator):    #    "value, by" replaced with "locator"
         self.driver = driver
@@ -9,7 +10,6 @@ class BaseElement(object):
         # self.by = by
         # self.locator = (self.by, self.value)
         self.locator = locator
-
         self.web_element = None
         self.find_element()
 
@@ -19,7 +19,7 @@ class BaseElement(object):
             EC.visibility_of_element_located(self.locator))
         self.web_element = element
         return None
-    
+
     def input_text(self, txt):
         self.web_element.send_keys(txt)
 

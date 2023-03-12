@@ -14,7 +14,6 @@ class TrialPage(BasePage):
         locator = Locator(By.CSS_SELECTOR, 'input#r1Input')
         # return BaseElement(driver=self.driver, by=locator[0], value=locator[1])
         return BaseElement(driver=self.driver, locator=locator)
-    
 
     @property
     def stone_button(self):

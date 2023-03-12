@@ -24,7 +24,7 @@ class PageWithListings:
     def highest_wealth(self):
         return self.get_listings_high_to_low()[0]
 
-    
+
 if __name__ == '__main__':
     browser = webdriver.Chrome()
     browser.get('https://techstepacademy.com/trial-of-the-stones')
@@ -33,5 +33,5 @@ if __name__ == '__main__':
     listings_page = PageWithListings(html)
 
     highest_wealth_listing = listings_page.highest_wealth
-    
+
     print("The listing with the highest wealth is: ", f"{highest_wealth_listing.name} with ${highest_wealth_listing.wealth}")
